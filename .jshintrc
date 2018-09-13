@@ -19,6 +19,9 @@
     // Protractor
     "browser": false,
     "element": false,
-    "by": false
+    "by": false,
+
+    // Browser
+    "console": false
   }
 }
