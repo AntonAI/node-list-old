@@ -9,9 +9,9 @@ angular.module('myApp.view1', ['ngRoute', 'myApp.data-service'])
   });
 }])
 
-.controller('View1Ctrl', ['DataService', function(DataService) {
+.controller('View1Ctrl', ['$scope', 'DataService', function($scope, DataService) {
 
-  // TODO: get returned array of nodes from the backend, display as a list in the front-end
-  // TODO: data service will periodically receive updates for single nodes, need to update front-end accordingly
+  // TODO: get array of nodes from the data service asynchronously, display as a list in the UI
+  // TODO: data service will periodically receive updates for single nodes, need to update the UI accordingly
   DataService.getNodes();
 }]);
